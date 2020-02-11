@@ -24,7 +24,7 @@ spec:
     metadata:
       labels:
         app: ruby
-        app.kubernetes.io/utility-pod: 'true'
+        app.kubernetes.io/utility-pod-origin: 'true'
     spec:
       containers:
       - name: ruby
