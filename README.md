@@ -103,7 +103,11 @@ spec:
 
 We find the deployment with label `app.kubernetes.io/utility-pod-origin: "true"` and clone the whole deployment:
 ```bash
-kubectl run -it ruby-utility --image=ruby-example:7c021a7953663fe79a7a0bb9f744dbefaec04a68050666885c16b1bccc710f7d --env RACK_ENV=development --labels app.kubernetes.io/ksync=true -- bash
+kubectl run -it ruby-utility \
+  --image=ruby-example:7c021a7953663fe79a7a0bb9f744dbefaec04a68050666885c16b1bccc710f7d \
+  --env RACK_ENV=development \
+  --labels app.kubernetes.io/ksync=true  \
+  -- bash
 ```
 Also, add the `ksync=true` tag, to enable file sync 2 was file sync for this container.
 
