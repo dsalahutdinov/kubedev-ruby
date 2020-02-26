@@ -1,6 +1,6 @@
 Here is the playground for doing "local" development of Ruby web application on top of Kubernetes:
 
-![Overall diagram how idea works](docs/kubedev-02-skaffold-utility-node-creation.png).
+![Overall diagram how idea works](docs/resources/kubedev-02-skaffold-utility-node-creation.png).
 
 Checkout source code:
 ```bash
